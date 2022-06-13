@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.firstbody {
+  font-size: 15px;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  background-color: hsl(0, 0%, 95%);
+  position: relative;
+  right: 150px;
+  top: 40px;
+}
+.firstclass {
+  margin: auto;
+}
+.wrap {
+  display: flex;
+  flex-direction: row;
+  border-radius: 11px;
+  margin: auto;
+  margin-right: 5em;
+  overflow: hidden;
+}
+div .first {
+  line-height: 1.5;
+  padding: 3em;
+  background-color: hsl(31, 77%, 52%);
+}
+div .second {
+  line-height: 1.5;
+  padding: 3em;
+  background-color: hsl(184, 100%, 22%);
+}
+div .third {
+  line-height: 1.5;
+  padding: 3em;
+  background-color: hsl(179, 100%, 13%);
+}
+div h2 {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+}
+div p {
+  font-size: 15px;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+img {
+  padding-bottom: 20px;
+}
+button {
+  cursor: pointer;
+}
+.firstb {
+  padding: 10px;
+  border-radius: 20px;
+  border-width: 0px;
+  width: 135px;
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.secondb {
+  padding: 10px;
+  border-radius: 20px;
+  border-width: 0px;
+  width: 135px;
+  color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.thirdb {
+  padding: 10px;
+  border-radius: 20px;
+  border-width: 0px;
+  width: 135px;
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+}
+button:hover {
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  transition-duration: 0.4s;
+  transition-property: background-color, border-color;
+}
+
+.secondbody {
+  background-color: rgb(26, 28, 40);
+  display: flex;
+  place-items: center;
+  height: 100vh;
+  position: relative;
+  right: 150px;
+}
+
+.secondclass {
+  display: grid;
+  grid-template-areas:
+    "a a a b"
+    " c c d d "
+    "c c e e";
+  gap: 15px;
+  width: 50%;
+  margin: auto;
+}
+
+.firstg {
+  background-color: rgb(235, 80, 32);
+  grid-area: a;
+  padding: 5.5em;
+}
+.secondg {
+  background-color: rgb(255, 164, 1);
+  grid-area: b;
+  padding: 5.5em;
+}
+.thirdg {
+  background-color: rgb(5, 170, 66);
+  grid-area: c;
+  padding: 6.2em;
+}
+.forthg {
+  background-color: rgb(1, 174, 253);
+  grid-area: d;
+  padding: 1.5em;
+}
+.fifthg {
+  background-color: rgb(1, 174, 253);
+  grid-area: e;
+  padding: 2em;
+}
+.move2 {
+  cursor: pointer;
+  position: relative;
+  bottom: 250px;
+  left: 670px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 0px;
+  width: 400px;
+  color: rgb(26, 28, 40);
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.move3 {
+  cursor: pointer;
+  position: relative;
+  bottom: 290px;
+  left: 630px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+  border-width: 0px;
+  width: 400px;
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 91%, 17%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.move2:hover {
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  transition-duration: 0.4s;
+}
+.move3:hover {
+  background-color: hsla(184, 82%, 31%, 0.966);
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  transition-duration: 0.4s;
+}
+@media only screen and (max-width: 900px) {
+  .wrap {
+    display: block;
+  }
+  .move3 {
+    position: relative;
+    bottom: 290px;
+    left: 300px;
+    font-size: 10px;
+    font-weight: 600;
+    width: 200px;
+  }
+}
